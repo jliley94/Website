@@ -1,0 +1,175 @@
+/* 
+    Created on : 13-Jul-2016, 01:55:21
+    Author     : joshl
+    */
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    #cv a {
+        font-weight: bold;
+        color: #0099ff;
+    }
+    #cv a:hover {
+        color: #99ccff;
+    }
+    .spacer {
+        padding: 25px;
+    }
+    /* Style Profile Picture Picture */
+    .container img {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000;
+        border-radius: 50%;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+  }
+/*
+body {
+    background-color: #ffffff;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+    /*    set animation*/
+    /*
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+nav.sticky {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    position: fixed;
+    background: rgba(51, 51, 51, 0.3);
+    color: white;
+    text-align: center;
+}
+.navbar-header {
+    overflow: hidden;
+    float: left;
+    border-right:1px solid #bbb;
+    display: block;
+    padding: 14px 16px;
+}
+.navbar-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-container li {
+    float: left;
+}
+
+.navbar-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#cv, #cv a {
+    float: right;
+    font-weight: bold;
+    background-color: #0099ff;
+}
+
+.navbar-container li a:hover:not(.active) {
+    background-color: #111;
+    color: #4CAF50;
+
+    /* set animation */
+    /*
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;   
+}
+
+.navbar-container #cv a:hover:not(.active) {
+    color: #0066cc;
+    background-color: #99ccff;
+
+    /* set animation */
+    /*
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;   
+}
+
+.navbar-container .active {
+    background-color: #4CAF50;
+}
+.navbar-container .not-active {
+    background-color: #333;
+}
+.selfmessage {
+    padding: 50px;
+}
+/*Page Contents*/
+/*
+.section-container {
+    background-color: #bbb;
+    color: #fff;
+    width: 100%;
+    padding-top: 47px;
+    height:100vh;
+}
+.section-header {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+.section-content {
+    background-color: #77CC7D;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+}
+.section-content img {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 50%;
+}
+.list-group li {
+    color: #000;
+} 
+.info {
+    margin-top: 50px;
+}
+.footer {
+    background-color: #666666;
+    color: #fff;
+    padding: 50px;
+    padding-bottom: auto;
+}
+.LI-profile-badge {
+    float: right;
+    display: float;
+}
+*/

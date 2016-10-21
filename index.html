@@ -11,14 +11,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Googlemaps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz9CYB1hD_GWPW8MLAOp0h-_Ot3e1bw6M&callback=initMap"></script>
   <!-- My CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- My Javascript -->
   <script src="javascript/activeSwitch.js"></script>
+  <script src="javascript/googlemaps.js"></script>
 </head>
 <body>
   <!-- Nav bar -->
-
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -46,23 +48,81 @@
 
   <!-- First Section: About -->
   <div id="About" class="jumbotron">
-  <!-- Nav Spacer -->
-  <div class="spacer"></div>
-  <div class="container">
-      <!-- Media Object -->
+    <!-- Nav Spacer -->
+    <div class="spacer"></div>
+    <div class="container">
+      <!-- Pic and Desc -->
       <div class="media">
         <div class="media-left media-middle">
-          <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="74" height="74">                 
+          <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="100" height="100">                 
         </div>
         <div class="media-body">
-          <h4 class="media-heading">Joshua Liley</h4>
-          <p> I am an IT with Business Technologies Graduate with a passion for Web Development, seeking work in a diverse and challenging development role where I can build on my existing skills and experience.</p>
+          <h2 class="media-heading">Hello, I'm Josh.</h2>
+          <p>IT with Business Technologies graduate, seeking work in a diverse and challenging role where I can build on my existing skills and experience, as well as develop new skills and collaborate with others. During my time at university, I learnt a wide range of computing skills including web development which is an area that I want to specialise in.</p>
           <div class="test"><p></p></div>
+        </div>
+      </div>
+      <!-- Atributes -->
+      <div class="container-fluid bg-3 text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Skills">
+            <p>I love being social, which is why I enjoy working in a team, helping overs, and making presentations.</p>
+          </div>
+          <div class="col-sm-4">
+            <div id="map" alt="Map"></div>
+            <p>I currently based in wirral, which is why I am looking for work within the North West. However, I would be open to relocating for the right job.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Car">
+            <p>Full Current Clean UK Drivers Licence</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Second Section: Skills -->
+  <div id="Skills" class="container-fluid bg-3 text-center">
+    <h3>Some of my Work</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-3">
+        <p>Some text..</p>
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div><br><br>
+
+  <!-- Forth Section: Portfolio -->
   <div id="Skills" class="container-fluid bg-3 text-center">
     <h3>Some of my Work</h3><br>
     <div class="row">

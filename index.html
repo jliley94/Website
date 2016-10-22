@@ -13,16 +13,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Googlemaps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz9CYB1hD_GWPW8MLAOp0h-_Ot3e1bw6M&callback=initMap"></script>
+  <!-- FontAwesome -->
+  <script src="https://use.fontawesome.com/176678f636.js"></script>
+  <!--  WOW CSS -->
+  <link rel="stylesheet" href="WOW/css/libs/animate.css">
+  <script src="WOW/dist/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <!-- My CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- My Javascript -->
   <script src="javascript/activeSwitch.js"></script>
+  <script src="javascript/activeSkill.js"></script>
   <script src="javascript/googlemaps.js"></script>
 </head>
 <body>
   <!-- Nav bar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
+      <!-- nav for small screens -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -37,7 +47,7 @@
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Education">Education</a></li>
           <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Portfolio">Contact</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li id="cv"><a href="http://jliley.co.uk/documents/Joshua%20Liley%20CV.pdf" target="_blank">View CV</a></li>
@@ -47,7 +57,7 @@
   </nav>
 
   <!-- First Section: About -->
-  <div id="About" class="jumbotron">
+  <div id="About" class="jumbotron wow bounceInUp">
     <!-- Nav Spacer -->
     <div class="spacer"></div>
     <div class="container">
@@ -57,7 +67,7 @@
           <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="100" height="100">                 
         </div>
         <div class="media-body">
-          <h2 class="media-heading">Hello, I'm Josh.</h2>
+          <h2 class="media-heading wow bounceInDown" data-wow-delay="1s">Hello, I'm Josh.</h2>
           <p>IT with Business Technologies graduate, seeking work in a diverse and challenging role where I can build on my existing skills and experience, as well as develop new skills and collaborate with others. During my time at university, I learnt a wide range of computing skills including web development which is an area that I want to specialise in.</p>
           <div class="test"><p></p></div>
         </div>
@@ -70,7 +80,7 @@
             <p>I love being social, which is why I enjoy working in a team, helping overs, and making presentations.</p>
           </div>
           <div class="col-sm-4">
-            <div id="map" alt="Map"></div>
+            <div id="map" alt="Map of Wirral"></div>
             <p>I currently based in wirral, which is why I am looking for work within the North West. However, I would be open to relocating for the right job.</p>
           </div>
           <div class="col-sm-4">
@@ -83,47 +93,58 @@
   </div>
 
   <!-- Second Section: Skills -->
-  <div id="Skills" class="container-fluid bg-3 text-center">
-    <h3>Some of my Work</h3><br>
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+  <div class="wow bounceInUp" id="Skills" data-target="#mySkills">
+    <!-- Nav Spacer -->
+    <div class="spacer"></div>
+    <div class="container-fluid bg-3 text-center">
+      <h2>My Skill Set</h2>
+      <h3>Press for more information...</h3>
+      <!-- Skill images can be selected to show more info -->
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+          <p>HTML 5, CSS 3</p>
+          <a href="#1"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-2">
+          <p>Javascript, JQuery, Bootstrap</p>
+          <a href="#2"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive wow pulse" data-wow-delay="2s" data-wow-iteration="4" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-2">
+          <p>PHP, SQL</p>
+          <a href="#3"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-2">
+          <p>Java, Android</p>
+          <a href="#4"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive wow pulse" data-wow-delay="10s" data-wow-iteration="4" style="width:100%" alt="Image"></a>
+        </div>
       </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-    </div>
-  </div><br>
+    </div><br>
 
-  <div class="container-fluid bg-3 text-center">
-    <div class="row">
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-3">
-        <p>Some text..</p>
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="container-fluid bg-3 text-center">
+      <h4 id="info"></br></h4><br>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-2">
+          <p>Pyphon</p>
+          <a href="#5"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-2">
+          <p>GitHub</p>
+          <a href="#6"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive wow tada" data-wow-delay="6s" data-wow-iteration="4" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-2">
+          <p>C++, C#, MVC, .NET</p>
+          <a href="#7"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
       </div>
     </div>
   </div><br><br>
+
+  <!-- Third Section: Education -->
 
   <!-- Forth Section: Portfolio -->
-  <div id="Skills" class="container-fluid bg-3 text-center">
+  <div id="Portfolio" class="container-fluid bg-3 text-center">
     <h3>Some of my Work</h3><br>
     <div class="row">
       <div class="col-sm-3">
@@ -166,9 +187,31 @@
     </div>
   </div><br><br>
 
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
+  <!-- Footer / End of Page -->
+  <footer id="Contact" class="container-fluid text-center">
+    <h2>Get in Touch</h2>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-1">
+       <a href="https://github.com/jliley94" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-sm-1"></div>
+     <div class="col-sm-2">
+       <a href="https://uk.linkedin.com/in/joshualiley" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-sm-1"></div>
+     <div class="col-sm-1">
+       <a href="http://jliley.co.uk/documents/Joshua%20Liley%20CV.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-sm-1"></div>
+     <div class="col-sm-1">
+       <a href="mailto:jliley94@gmail.com" target="_blank"><i class="fa fa-at fa-4x" aria-hidden="true"></i></a>
+     </div>
+   </div>
+   <p>© 2016 Joshua Liley. All rights reserved.</p>
+ </footer>
+
 </body>
 </html>
+
 

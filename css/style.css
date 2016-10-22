@@ -32,14 +32,19 @@
         height: 190px;
         width: 100%;        
     }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
     /* Footer*/
     footer {
         background-color: #181818;
-      color: #fff;
-  }
-  footer img {
-    border-width: 2px;
-    border-color: #000;
-    border-radius: 50%;
-    border-radius: 50%;
-}
+        color: #fff;
+    }
+    footer img {
+        border-width: 2px;
+        border-color: #000;
+        border-radius: 50%;
+        border-radius: 50%;
+    }

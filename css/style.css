@@ -42,9 +42,6 @@
         background-color: #181818;
         color: #fff;
     }
-    footer img {
-        border-width: 2px;
-        border-color: #000;
-        border-radius: 50%;
-        border-radius: 50%;
+    footer p {
+        color: #8c8c8c;
     }

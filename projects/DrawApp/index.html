@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art App</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.css"/>
+        <script src="js/jquery-2.0.3.js"></script>
+        <script src="js/jquery.mobile-1.3.2.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="welcome">
+            <!-- start of #welcome page -->
+            <!-- header -->
+                <div data-role="header">
+                  <h1>Art Application</h1>
+                 
+                </div>
+            <div data-role="content">
+                <!-- text -->
+                This application allows you to draw using the mouse (or touch-screen) in any colour, size of brush, and you can even make the colour transparent. 
+                <!-- button , redirects to the #draw page -->
+                <a href="#draw" data-theme="b" data-role="button" data-icon="edit" data-transition="pop">Start To Draw</a>
+                
+                <div align="center">
+                    <!-- 6 images, saved in the images folder, shown at reduced size, when clicked open in pop-up  window. -->
+                    <label>Examples of what you can make:</label>
+                    <br>
+                    <a href="#example1" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download.png" alt="Example" style="width:20%"></a>
+                    <a href="#example2" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download (1).png" alt="Example" style="width:20%"></a>
+                    <a href="#example3" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download (2).png" alt="Example" style="width:20%"></a>
+                    <br>
+                    <a href="#example4" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download (3).png" alt="Example" style="width:20%"></a>
+                    <a href="#example5" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download (4).png" alt="Example" style="width:20%"></a>
+                    <a href="#example6" data-rel="popup" data-position-to="window" data-transition="pop"><img src="Images/download (5).png" alt="Example" style="width:20%"></a>
+                    
+                    <div data-role="popup" id="example1" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download.png" style="max-height:512px;" alt="Example">
+                    </div>
+                    <div data-role="popup" id="example2" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download (1).png" style="max-height:512px;" alt="Example">
+                    </div>
+                    <div data-role="popup" id="example3" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download (2).png" style="max-height:512px;" alt="Example">
+                    </div>
+                    <div data-role="popup" id="example4" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download (3).png" style="max-height:512px;" alt="Example">
+                    </div>
+                    <div data-role="popup" id="example5" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download (4).png" style="max-height:512px;" alt="Example">
+                    </div>
+                    <div data-role="popup" id="example6" data-overlay-theme="a" data-theme="d" data-corners="false">
+                        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img src="Images/download (5).png" style="max-height:512px;" alt="Example">
+                    </div>
+                    
+                </div>
+                
+            </div> 
+            <!-- footer -->
+            <div data-role="footer" data-position="fixed">
+                <h3>&copy; Josh Liley,Sheffield Hallam Uni. 2013-2014</h3>
+            </div>
+        </div>
+        <div data-role="page" id="draw">
+            <!-- start of second page #draw-->
+            <!-- header -->
+            <div data-role="header">
+                  <h1>Drawing Platform</h1>
+                </div>
+            <div data-role="content">
+                <!-- button returning you to #welcome page -->
+                <a href="#welcome" data-theme="b" data-role="button" data-icon="home" data-transition="pop">Return to Home Page</a>
+            </div> 
+            <div align="center">
+            <!--  drawing area -->
+            <!-- the canvas, with thick border -->
+            <canvas id="drawSurface" width="475"  height="315" style="border:3px solid black;"></canvas> <!-- The canvas element can only be manipulated via JavaScript -->
+            <!--  475 x 315 makes it just smaller than the size of a phones screen (landscape 480x 320) -->
+            </div>
+            <div>
+                <!-- size scroller 1-40 -->
+                <label for="sizeSlider">Size:</label>
+                <input type="range" name="slider" id="sizeSlider" value="5" min="1" max="40" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d">
+                
+            </div>
+             <div>
+                 <!-- Transparency scroller, 0.1-1 in 0.1 increments -->
+                <label for="tranSlider">Transparency:</label>
+                <input type="range" name="slider" id="tranSlider" value="1" min="0.1" step="0.1" max="1" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d">
+                
+            </div>
+            
+            <div data-role="collapsible" data-mini="true" data-theme="b" data-content-theme="a">
+                <!-- collapsible menu -->
+                <h4>Colour Pallet</h4>
+                <ul data-role="listview">
+                    <!-- button which will show the colour of your brush on the canvas next to it when pressed -->
+                    <li><table border="0"><tr><td><button id="preview" data-icon="refresh" data-theme="b" data-inline="true">Preview</button></td><td><canvas id="colourExam" width="50" height="50" style="border:1px;"></canvas></td></tr></table></li>
+                    <!-- 3 scrollers for the RGB values from 0-255 -->
+                    <li><label for="rSlider">Red:</label><input type="range" name="slider" id="rSlider" value="0" min="0" max="255" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d"></li>
+                    <li><label for="gSlider">Green:</label><input type="range" name="slider" id="gSlider" value="0" min="0" max="255" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d"></li>
+                    <li><label for="bSlider">Blue:</label><input type="range" name="slider" id="bSlider" value="0" min="0" max="255" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="d"></li>
+                </ul>
+            </div>
+            
+            <!-- Foooter -->
+            <div data-role="footer" data-position="fixed" align="center">
+                <!-- 5 buttons, all with icons. -->
+                <button id="erase" data-icon="delete" data-theme="b" data-inline="true">Clear</button>
+                <button id="save" data-icon="check" data-theme="b" data-inline="true">Save</button>
+                <a href="#popupBasic" data-rel="popup" data-role="button" data-icon="info" data-theme="b" data-inline="true" data-transition="pop">Help</a>
+                <div data-role="popup" id="popupBasic">
+                    <!-- what will be shown on the pop-up -->
+                    <p><b>Canvas:</b> Move over the canvas with the cursor or on the touch-screen to paint over it. <br>
+                       <b>Brush:</b> to change your brush, use the top scroll bar labelled size to pick between the brush sizes (1 to 40).<br>
+                    <b>Transparency:</b> You can make the paint more transparent with the scroll bar labelled Transparency.<br>
+                    <b>Colour Pallet:</b> if you open the collapsible menu you will see three scrollers, Red, green, and blue, mixing these colours together will give you a blend of colour.<br>
+                    <b>Preview:</b> after blending your colours together, press the preview button to show the colour before you add it to the page.<br>
+                    <b>Clear:</b> This button clears the canvas of your drawing, WARNING: this can only be undone if you have saved it.<br>
+                    <b>Save:</b> This button saves your drawing on the canvas, this can be used to restore your work using the load button.<br>
+                    <b>Load:</b> This button loads your drawing onto the canvas but you must have used Save before using this button, WARNING: this clears the canvas and replaces it with your saved drawing.<br>
+                    <b>Open:</b> This button opens your drawing in a new window as an image, you can then right-click, select 'Save image as..' to save the drawing to your computer.<br></p>
+                </div>
+                <button id="load" data-icon="forward" data-theme="b" data-inline="true">Load</button>
+                <button id="open" data-icon="check" data-theme="b" data-inline="true" data-transition="pop">Open</button>
+            </div>
+            
+            <script>
+                      
+               var r, g, b = 0;
+               //set the stating colour for the fill colour of the cirlcles to black
+      function requiredFeaturesAvailable() {
+        return (
+                 //check for event listeners, the canvas and local storage 
+                 !!window.addEventListener && 
+                 !!document.createElement('canvas').getContext &&
+                 !!window.localStorage
+               );
+      } 
+      
+      if ( !requiredFeaturesAvailable() ) { //if they were not found display error message
+        document.getElementById('bodyElement').innerHTML = "<h2>Required features are not supported by this browser.</h2><p>To use this application, upgrade your browser to the latest version.</p>";
+      }
+      else {
+          //else run the app
+        window.addEventListener('load', init, false); // Safety first.
+        function init() {
+            //set the canvas on the page as a varialbe
+          var canvas = document.getElementById('drawSurface');
+          var context = canvas.getContext('2d');
+
+          //if mouse detected run funtion paintCanvas
+          if (window.navigator.msPointerEnabled) {
+            canvas.addEventListener('MSPointerMove', paintCanvas, false);
+          }
+          else {
+            canvas.addEventListener('mousemove', paintCanvas, false);
+          }
+  
+          //event listeners for the 5 buttons on the footer
+          document.getElementById('erase').addEventListener('click', eraseCanvas, false);
+          document.getElementById('save').addEventListener('click', saveCanvas, false);
+          document.getElementById('load').addEventListener('click', loadCanvas, false);
+          document.getElementById('preview').addEventListener('click', reloadCE, false);
+          document.getElementById('open').addEventListener('click', open, false); 
+        
+          function paintCanvas(event) {
+              //set variables for the values of the sliders on the page
+              var size = document.getElementById('sizeSlider').value;
+              var tran = document.getElementById('tranSlider').value;
+              var r = document.getElementById('rSlider').value;
+              var g = document.getElementById('gSlider').value;
+              var b = document.getElementById('bSlider').value;
+              //set the fill style (colour of the cirlce) to the RGBA value of the scrollers
+              context.fillStyle = 'rgba('+r+', '+g+', '+b+','+tran+')';
+              //draw the circle on the canvas where the mouse is, fill it with the fillsyle colour
+              context.beginPath();
+              context.arc(event.offsetX, event.offsetY,size,0,2*Math.PI);
+              context.fill();
+          } // paintCanvas
+          
+          function saveCanvas() {
+              //save contents of the canvas into local storage
+            window.localStorage.canvasImage = canvas.toDataURL();
+          } // saveCanvas
+  
+          function eraseCanvas() {
+              //clears the canvas
+            context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+          } 
+  
+          function loadCanvas() {
+              //clears the canvas, then loads what was saved into local storage (if anything) onto the canvas
+            context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+            var img = new Image(); 
+            
+            img.src = window.localStorage.canvasImage; 
+            img.onload = function() { 
+              context.drawImage(img, 0, 0);
+            }; 
+          } 
+          function reloadCE() {
+              //this shows the colour of the brush in a canvas next to the previe button
+              //set varialbe for the current slider values
+              var tran = document.getElementById('tranSlider').value;
+              var r = document.getElementById('rSlider').value;
+              var g = document.getElementById('gSlider').value;
+              var b = document.getElementById('bSlider').value;
+              
+              //setup the canvas
+              var c=document.getElementById("colourExam");
+              var cxt=c.getContext("2d");
+              //make the colour = to the scroller values
+              cxt.fillStyle = 'rgba('+r+', '+g+', '+b+','+tran+')';
+              cxt.clearRect(0, 0, cxt.canvas.width, cxt.canvas.height);
+              //draw the cirlce example
+              cxt.beginPath();
+              cxt.arc(25,25,25,0,2*Math.PI);
+              cxt.stroke();
+              cxt.fill();
+          }
+          function open() {                        
+            // save canvas image as data url (png format by default) open it in new windo
+            var dataURL = canvas.toDataURL("image/png");
+            window.open(dataURL);
+          }
+        } // init
+      } // else
+    </script>
+        </div>
+    </body>
+</html>

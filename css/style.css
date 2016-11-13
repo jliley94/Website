@@ -27,6 +27,13 @@
         border-color: #000;
         border-radius: 50%;
     }
+    /* Body */
+    h2 {
+        color: #4286f4;
+    }
+    h4 {
+        color: #617ba5;
+    }
     /* Google maps */
     #map {
         height: 190px;
@@ -40,6 +47,9 @@
     /* Footer*/
     footer {
         background-color: #181818;
+        color: #fff;
+    }
+    footer h2 {
         color: #fff;
     }
     footer p {

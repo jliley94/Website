@@ -3,6 +3,14 @@
     Author     : joshl
     */
     /* Remove the navbar's default margin-bottom and rounded borders */
+    html, body {
+        height:100%;
+        font-size: 100%;
+    }
+    .fill { 
+        min-height: 100%;
+        /*height: 100%;*/
+    }
     .navbar {
         margin-bottom: 0;
         bord
@@ -16,23 +24,38 @@
     #cv a:hover {
         color: #23527c;
     }
+    .segmenthighlight {
+        background-color: #eaeaea;
+    }
     /* Used as a buffer between the nav bar and start of the content */
     .spacer {
         padding: 25px;
     }
     /* Style Profile Picture Picture */
-    .container .media img {
+    .container-fluid .media img {
         border-style: solid;
         border-width: 2px;
         border-color: #000;
         border-radius: 50%;
     }
-    /* Body */
     h2 {
         color: #4286f4;
+        font-family: 'Lobster', cursive;
+        font-size: 2em;
     }
     h4 {
         color: #617ba5;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.25em;
+
+    }
+    .container-fluid .textBig p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.3em;
+    }
+    p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.3em;
     }
     /* Google maps */
     #map {

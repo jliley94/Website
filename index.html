@@ -12,6 +12,8 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Googlemaps -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz9CYB1hD_GWPW8MLAOp0h-_Ot3e1bw6M&callback=initMap"></script>
   <!-- FontAwesome -->
   <script src="https://use.fontawesome.com/176678f636.js"></script>
@@ -58,291 +60,315 @@
   </nav>
 
   <!-- First Section: About -->
-  <div id="About" class="jumbotron wow bounceInUp">
+  <div id="About" class="container-fluid segmenthighlight fill wow bounceIn">
     <!-- Nav Spacer -->
     <div class="spacer"></div>
-    <div class="container">
+    <div class="container-fluid text-left">
       <!-- Pic and Desc -->
-      <div class="media">
-        <div class="media-left media-middle">
-          <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="100" height="100">                 
+      <br>
+      <br>
+      <div class="row">
+        <!-- mobile view -->
+        <div class="media visible-xs">
+          <div class="col-xs-2 col-xs-offset-4">
+            <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="100" height="100">   
+            <br>
+          </div>
+          <div class="col-xs-12">
+            <h2 class="media-heading wow bounceInDown" data-wow-delay="1s">Hello, I'm Josh.</h2>
+          </div>
+          <div class="col-xs-12">
+            <p>IT with Business Technologies graduate, seeking work in a diverse and challenging role where I can build on my existing skills and experience, as well as develop new skills and collaborate with others. During my time at university, I learnt a wide range of computing skills including web development which is an area that I want to specialise in.</p>
+          </div>
         </div>
-        <div class="media-body">
-          <h2 class="media-heading wow bounceInDown" data-wow-delay="1s">Hello, I'm Josh.</h2>
-          <p>IT with Business Technologies graduate, seeking work in a diverse and challenging role where I can build on my existing skills and experience, as well as develop new skills and collaborate with others. During my time at university, I learnt a wide range of computing skills including web development which is an area that I want to specialise in.</p>
-          <div class="test"><p></p></div>
+
+        <!-- tablet and pc view -->
+        <div class="media hidden-xs">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="media-left media-middle">
+              <img class="media-object" src="images/photo.jpg" alt="Profile Pic" width="100" height="100">                 
+            </div>
+            <div class="media-body">
+              <h2 class="media-heading wow bounceInDown" data-wow-delay="1s">Hello, I'm Josh.</h2>
+              <p>IT with Business Technologies graduate, seeking work in a diverse and challenging role where I can build on my existing skills and experience, as well as develop new skills and collaborate with others. During my time at university, I learnt a wide range of computing skills including web development which is an area that I want to specialise in.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Atributes -->
-      <div class="container-fluid bg-3 text-center">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Skills">
-            <p>I love being social, which is why I enjoy working in a team, helping others, and making presentations.</p>
-          </div>
-          <div class="col-sm-4">
-            <div id="map" alt="Map"></div>
-            <p>I currently based on the Wirral, which is why I am looking for work within the North West. However, I would be open to relocating for the right job.</p>
-          </div>
-          <div class="col-sm-4">
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Car">
-            <p>Full Current Clean UK Drivers Licence</p>
-          </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Atributes -->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1">
+          <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+          <p>I love being social, which is why I enjoy working in a team, helping others, and making presentations.</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+          <i class="fa fa-file-code-o fa-5x" aria-hidden="true"></i>
+          <p>Web Developer with experience in many programming languages and other computer related skills.</p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+          <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+          <p>I am currently based on the Wirral, which is why I am looking for work within the North West. However, I would be open to relocating for the right job.</p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Second Section: Skills -->
-  <div id="Skills" class="container-fluid bg-3 text-center wow bounceInUp">
+  <div id="Skills" class="container-fluid text-center fill wow bounceIn">
     <!-- Nav Spacer -->
     <div class="spacer"></div>
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid text-center">
       <h2>My Skill Set</h2>
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 text-left">
-          <h4>Over the years, I have gained many skills in web development, design, project management, as well as other skills such as communication, presenting etc...</h4>
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-left">
+          <p>Over the years, I have gained many skills in web development, design, project management, as well as other skills such as communication, presenting, and problem solving. I enjoy learning new skills and aim to gain as much knowedge as possible in my areas of expertise.</p>
         </div>
-        <div class="col-sm-2"></div>
       </div>
+      <br>
+      <br>
+      <br>
       <!-- Skill images can be selected to show more info -->
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-2">
-          <p></p>
-          <img src="images/html.png" class="img-responsive" style="width:100%" alt="Image">
+      <div class="col-xs-6  col-sm-2 col-sm-offset-2">
+          <h4>HTML</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i>
         </div>
-        <div class="col-sm-2">
-          <p></p>
-          <img src="images/css.png" class="img-responsive" style="width:100%" alt="Image">
+        <div class="col-xs-6 col-sm-2">
+          <h4>CSS</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i>
         </div>
-        <div class="col-sm-2">
-          <p></p>
-          <img src="images/js.png" class="img-responsive" style="width:100%" alt="Image">
+        <div class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-0">
+          <h4>JavaScript</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i>
         </div>
-        <div class="col-sm-2">
-          <p></p>
-          <img src="images/bs.png" class="img-responsive" style="width:100%" alt="Image">
+        <div class="col-xs-4 col-sm-2">
+          <h4>Bootstrap</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
         </div>
       </div>
-
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/php.png" class="img-responsive" style="width:100%" alt="Image">
+      <br>
+      <div class="row">
+        <div class="col-xs-6 col-sm-2 col-sm-offset-3">
+          <h4>PHP</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <h4>SQL</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <h4>Java</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+        </div>
       </div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/sql.png" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/java.png" class="img-responsive" style="width:100%" alt="Image">
+      <br>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-2">
+          <h4>Android</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-half-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-4 col-sm-2">
+          <h4>GitHub</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <h4>Design</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+        </div>
+        <div class="col-xs-6 col-sm-2">
+          <h4>C#</h4>
+          <i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i><i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/ad.png" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/git.png" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/ps.png" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-2">
-        <p></p>
-        <img src="images/vs.png" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-    </div>
-  </div>
   </div>
   <br><br>
 
   <!-- Third Section: Education -->
-  <div id="Education" class="container-fluid bg-3 text-center">
+  <div id="Education" class="container-fluid text-center segmenthighlight fill wow bounceIn">
     <!-- Nav Spacer -->
     <div class="spacer"></div>
     <h2>Education</h2><br>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-11">
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img class="media-object" src="images/hallam-crest.png" width="160" height="160" alt="crest">
-            </a>
-          </div>
-          <div class="media-body text-left">
-            <h4 class="media-heading">University</h4>
-            Sheffield Hallam University<br>
-            BSc (Honours) in IT with Business Technologies<br>
-            Achieved Grade: 2.1<br>
-            Favourite Module: Interactive Web Development
+      <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+        <i class="fa fa-university fa-5x" aria-hidden="true"></i>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+        <h4>Graduated From: Sheffield Hallam University 2016</h4>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <h4>BSc (Honours) in IT with Business Technologies</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+        <i class="fa fa-trophy fa-5x" aria-hidden="true"></i>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+        <h4>Grade Achieved: 2.1</h4>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <h4>Favourite Module: Interactive Web Development</h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Modules -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h4 class="media-heading">Modules Included:</h4>
+        <div class="owl-carousel">
+          <div class="item"><p>Advanced Web Technologies</p></div>
+          <div class="item"><p>Applied Database Systems</p></div>
+          <div class="item"><p>Data Warehousing and Data Mining</p></div>
+          <div class="item"><p>Distributed Programming and Technologies</p></div>
+          <div class="item"><p>Dynamic Web & Media</p></div>
+          <div class="item"><p>Internet Entrepreneurship</p></div>
+          <div class="item"><p>Planning & Project Management</p></div>
+          <div class="item"><p>Systems Analysis & Design</p></div>
+          <div class="item"><p>Hardware and Network Fundamentals</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Forth Section: Portfolio -->
+  <div id="Portfolio" class="container-fluid fill wow bounceIn">
+    <!-- Nav Spacer -->
+    <div class="spacer"></div>
+    <h2 class="text-center">Some of my Work</h2><br>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <img src="images/EduApp.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4">
+        <h4>Educational App</h4>
+        This interactive application helps users learn via lessons and quizes. Inplimentation of gamification helps to motivate users with features such as achievements, unlockable content, and scoring.
+        <br>
+        <span class="label label-success">HTML5/CSS3</span>
+        <span class="label label-success">JQuery</span>
+        <span class="label label-success">Bootstrap 3</span>
+        <span class="label label-success">SQL/PHP</span>
+        <span class="label label-success">Web Application</span>
+        <span class="label label-success">2016</span>
+        <br>
+        <br>
+        <a href="projects/EduApp/index.php" target="_blank" class="btn btn-primary" role="button">View</a>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <img src="images/DrawApp.png" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4">
+        <h4>Drawing Application</h4>
+        An application that allowed the user to use HTML5 and JQuery to draw in their browser with options to change colour, shape, and transparancy of the brush as well as other features. 
+        <br>
+        <span class="label label-success">HTML5/CSS3</span>
+        <span class="label label-success">JQuery</span>
+        <span class="label label-success">Web Application</span>
+        <span class="label label-success">2014</span>
+        <br>
+        <br>
+        <a href="projects/RestApp/index.php" target="_blank" class="btn btn-primary" role="button">View</a>
+      </div>
+    </div>
+    <br>
+    <div class="earlierWork" style="display: none">
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2">
+          <img src="images/nandc.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <h4>Naughts and Crosses Game</h4>
+          An Android Application which would allow the user to play the game Naughts and crosses against a friend or the in-built AI. 
+          <br>
+          <span class="label label-success">Java</span>
+          <span class="label label-success">Android</span>
+          <span class="label label-success">Game</span>
+          <br>
+          <br>
+          <a href="http://jliley.co.uk/documents/nandc.pdf" target="_blank" class="btn btn-primary" role="button">View</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-5">
+        <div class="btn-group btn-group-justified" role="group">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary readMore">Show More</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
-        <h4 class="media-heading" style="font-weight: bold">Modules Included:</h4>
-        <div class="owl-carousel">
-          <div class="item"><h4>Advanced Web Technologies</h4></div>
-          <div class="item"><h4>Applied Database Systems</h4></div>
-          <div class="item"><h4>Data Warehousing and Data Mining</h4></div>
-          <div class="item"><h4>Distributed Programming and
-            Technologies</h4></div>
-            <div class="item"><h4>Dynamic Web & Media
-            </h4></div>
-            <div class="item"><h4>Internet Entrepreneurship</h4></div>
-            <div class="item"><h4>Planning & Project Management
-            </h4></div>
-            <div class="item"><h4>Systems Analysis & Design</h4></div>
-            <div class="item"><h4>Hardware and Network
-              Fundamentals</h4></div>
-            </div>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-      </div>
-
-      <!-- Forth Section: Portfolio -->
-      <div id="Portfolio" class="container-fluid bg-3">
-        <!-- Nav Spacer -->
-        <div class="spacer"></div>
-        <h2 class="text-center">Some of my Work</h2><br>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <img src="images/EduApp.jpg" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-4">
-            <h4>Educational App</h4>
-            This interactive application helps users learn via lessons and quizes. Inplimentation of gamification helps to motivate users with features such as achievements, unlockable content, and scoring.
-            <br>
-            <span class="label label-success">HTML5/CSS3</span>
-            <span class="label label-success">JQuery</span>
-            <span class="label label-success">Bootstrap 3</span>
-            <span class="label label-success">SQL/PHP</span>
-            <span class="label label-success">Web Application</span>
-            <span class="label label-success">2016</span>
-            <br>
-            <br>
-            <a href="projects/EduApp/index.php" target="_blank" class="btn btn-primary" role="button">View</a>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <img src="images/DrawApp.png" class="img-responsive" style="width:100%" alt="Image">
-          </div>
-          <div class="col-sm-4">
-            <h4>Drawing Application</h4>
-            An application that allowed the user to use HTML5 and JQuery to draw in their browser with options to change colour, shape, and transparancy of the brush as well as other features. 
-            <br>
-            <span class="label label-success">HTML5/CSS3</span>
-              <span class="label label-success">JQuery</span>
-              <span class="label label-success">Web Application</span>
-              <span class="label label-success">2014</span>
-            <br>
-            <br>
-            <a href="projects/RestApp/index.php" target="_blank" class="btn btn-primary" role="button">View</a>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-        <br>
-        <div class="earlierWork" style="display: none">
-          <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4">
-              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-4">
-              <h4>Naughts and Crosses Game</h4>
-              An Android Application which would allow the user to play the game Naughts and crosses against a friend or the in-built AI. 
-              <br>
-              <span class="label label-success">Java</span>
-              <span class="label label-success">Android</span>
-              <span class="label label-success">Game</span>
-            </div>
-            <div class="col-sm-2"></div>
-          </div>
-          <br>
-        </div>
-        <div class="row">
-          <div class="col-sm-5"></div>
-          <div class="col-sm-2">
-            <div class="btn-group btn-group-justified" role="group">
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-primary readMore">Show More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br><br>
-      <!-- Footer / End of Page -->
-      <footer id="Contact" class="container-fluid text-center">
-        <h2>Get in Touch</h2>
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-1">
-           <a href="https://github.com/jliley94" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
-         </div>
-         <div class="col-xs-1"></div>
-         <div class="col-xs-1">
-           <a href="https://uk.linkedin.com/in/joshualiley" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
-         </div>
-         <div class="col-xs-2"></div>
-         <div class="col-xs-1">
-           <a href="http://jliley.co.uk/documents/Joshua%20Liley%20CV.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
-         </div>
-         <div class="col-xs-1"></div>
-         <div class="col-xs-1">
-           <a href="mailto:jliley94@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
-         </div>
-       </div>
-       <p>© 2016 Joshua Liley. All rights reserved.</p>
-     </footer>
-     <!--  WOW CSS -->
-     <link rel="stylesheet" href="WOW/css/libs/animate.css">
-     <script src="WOW/dist/wow.min.js"></script>
-     <script>
-      new WOW().init();
-    </script>
-    <script>
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:10,
-          autoplay:true,
-          autoplayTimeout:1000,
-          autoplayHoverPause:true,
-          responsive:{
-            0:{
-              items:1
-            },
-            600:{
-              items:3
-            },
-            1000:{
-              items:5
-            }
-          }
-        })
-      });
-    </script>
-  </body>
-  </html>
+  </div>
+  <br><br>
+  <!-- Footer / End of Page -->
+  <footer id="Contact" class="container-fluid text-center">
+    <h2>Get in Touch</h2>
+    <div class="row wow bounceIn">
+      <div class="col-xs-3 col-sm-2 col-sm-offset-2">
+       <a href="https://github.com/jliley94" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-xs-3 col-sm-2">
+       <a href="https://uk.linkedin.com/in/joshualiley" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-xs-3 col-sm-2">
+       <a href="http://jliley.co.uk/documents/Joshua%20Liley%20CV.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
+     </div>
+     <div class="col-xs-3 col-sm-2">
+       <a href="mailto:jliley94@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+     </div>
+   </div>
+   <p>© 2016 Joshua Liley. All rights reserved.</p>
+ </footer>
+ <!--  WOW CSS -->
+ <link rel="stylesheet" href="WOW/css/libs/animate.css">
+ <script src="WOW/dist/wow.min.js"></script>
+ <script>
+  new WOW().init();
+</script>
+<script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:1000,
+      autoplayHoverPause:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      }
+    })
+  });
+</script>
+</body>
+</html>
 
 
